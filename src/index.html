@@ -14,194 +14,209 @@
     <form action="http://localhost:8080/api"
           method="post"
           class="form"
-          onsubmit="onSubmit()">
-      <fieldset class="form-set">
+          onsubmit="onSubmit()"
+          >
+      <fieldset class="form__set">
         <legend>Personal information</legend>
-        <div class="form-field">
+        <div class="form__field">
           <label for="fName">
             Surname:
             <input
-            type="text"
-            name="firstName"
-            id="fName"
-            minlength="5"
-            maxlength="32"
-            required>
+              type="text"
+              name="firstName"
+              id="fName"
+              minlength="5"
+              maxlength="32"
+              required
+            >
           </label>
         </div>
 
-        <div class="form-field">
+        <div class="form__field">
           <label for="lName">
             Name:
             <input
-            type="text"
-            name="lastName"
-            id="lName"
-            minlength="5"
-            maxlength="32"
-            required>
+              type="text"
+              name="lastName"
+              id="lName"
+              minlength="5"
+              maxlength="32"
+              required
+            >
           </label>
         </div>
 
-        <div class="form-field">
+        <div class="form__field">
           <label for="age">
             How old are You?
             <input
-            type="number"
-            name="age"
-            id="age"
-            value="12"
-            min="6"
-            max="100"
-            required>
+              type="number"
+              name="age"
+              id="age"
+              value="12"
+              min="6"
+              max="100"
+              required
+            >
           </label>
         </div>
 
-        <div class="form-field">
+        <div class="form__field">
           <label for="born">
             Full date of birth:
             <input
-            type="date"
-            name="dateOfBirth"
-            id="born"
-            required>
+              type="date"
+              name="dateOfBirth"
+              id="born"
+              required
+            >
           </label>
         </div>
 
-        <div class="form-field">
-          <label for="termAndContition">
+        <div class="form__field">
+          <label for="termAndCondition">
             I accept the term of the agreement:
             <input
-            type="checkbox"
-            name="term"
-            id="termAndContition"
-            required>
+              type="checkbox"
+              name="term"
+              id="termAndCondition"
+              required
+            >
           </label>
         </div>
       </fieldset>
 
-      <fieldset class="form-set">
+      <fieldset class="form__set">
         <legend>Registration</legend>
-        <div class="form-field">
+        <div class="form__field">
           <label for="email">
             E-mail:
             <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="email@example.com"
-            multiple
-            required>
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@example.com"
+              multiple
+              required
+            >
           </label>
         </div>
 
-        <div class="form-field">
+        <div class="form__field">
           <label for="pass">
             Password:
             <input
-            type="password"
-            name="password"
-            id="pass"
-            minlength="5"
-            maxlength="32"
-            required>
+              type="password"
+              name="password"
+              id="pass"
+              minlength="5"
+              maxlength="32"
+              required
+            >
           </label>
         </div>
       </fieldset>
 
-      <fieldset class="form-set">
+      <fieldset class="form__set">
         <legend>An interesting fact about you!</legend>
-        <div class="form-field">
-          Do you love cats?
-          <label for="pass">
+        <div class="form__field">
+          <span>Do you love cats?</span>
+          <label for="radioYes">
             <input
               type="radio"
               name="cats"
-              value="y">
+              value="yes"
+              id="radioYes"
+            >
             Yes
           </label>
-          <label for="pass">
+          <label for="radioNo">
             <input
               type="radio"
               name="cats"
-              value="n">
+              value="no"
+              id="radioNo"
+            >
             No
           </label>
         </div>
 
-        <div class="form-field">
+        <div class="form__field">
           <label for="color">
             What is your favorite color?
             <input
-            type="color"
-            name="color"
-            id="color">
+              type="color"
+              name="color"
+              id="color"
+            >
           </label>
         </div>
 
-        <div class="form-field">
+        <div class="form__field">
           <label for="time">
             What time do you go to bed?
             <input
-            type="time"
-            name="time"
-            id="time">
+              type="time"
+              name="time"
+              id="time"
+            >
           </label>
         </div>
 
-        <div class="form-field">
+        <div class="form__field">
           <label for="cars">
             What are your favorite brand of cars?
             <select
               name="cars"
               id="cars"
-              size="4">
+              size="4"
+            >
               <option value="bmw" selected>BMW</option>
               <option value="audi">Audi</option>
               <option value="lada">Lada</option>
-              <option value=""></option>
             </select>
           </label>
         </div>
 
-        <div class="form-field">
+        <div class="form__field">
           <label for="rate">
             How do you rate our work?
             <input
-            type="range"
-            name="rate"
-            id="rate">
+              type="range"
+              name="rate"
+              id="rate"
+            >
           </label>
         </div>
       </fieldset>
 
-      <fieldset class="form-set">
+      <fieldset class="form__set">
         <legend>Additional info</legend>
-        <div class="form-field">
+        <div class="form__field">
           <label for="text">
             Comments:
             <textarea
               name="text"
               id="text"
               cols="25"
-              rows="2">
+              rows="2"
+            >
             </textarea>
           </label>
         </div>
-        <div class="form-field">
+        <div class="form__field">
           <label for="how">
             Would you recommend us?
-            <select
-              name="opinion"
-              id="how">
-              <option value="y">yes</option>
-              <option value="n">no</option>
+            <select name="opinion" id="how">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
             </select>
           </label>
         </div>
       </fieldset>
-      <button type="submit">Submit</button>
-
+      <button type="submit">
+        Submit
+      </button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
